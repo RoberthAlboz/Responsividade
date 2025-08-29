@@ -1,0 +1,9 @@
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14; /* Reduz a fonte em telas menores */
+    }
+    .menu {
+        display: none; /* Esconde o menu horizontal */
+    }
+}
+    
