@@ -1,9 +1,208 @@
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 14; /* Reduz a fonte em telas menores */
-    }
-    .menu {
-        display: none; /* Esconde o menu horizontal */
-    }
+*{
+   margin: 5px;
+   padding: 5px;
+   box-sizing: border-box;
 }
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #000;
+    text-align: center;
+    color: white;
     
+}
+
+header {
+    background: url(assets/CARBY\ \(1\).png) no-repeat center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #d27474;
+
+}
+
+h3{
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+}
+p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+li {
+    text-align: left;
+}
+nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex; 
+    justify-content: center;
+    gap: 40px;
+}
+nav a {
+    color: white;
+    text-decoration: none; /* Retira o traço*/
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    
+    
+}
+nav a:hover {
+    color: #c71f37;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 40px 20px;
+    align-items: center; /* centraliza seções horizontalmente */
+}
+
+/* Home Section */
+#Home button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #c71f37;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Home button:hover {
+    background-color: #c71f37;
+}
+
+/* Carros Section */
+#Carros select {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+/* Contatos Section */
+#Contatos {
+    max-width: 600px;
+    width: 100%;
+}
+
+#Contatos h2 {
+    margin-bottom: 20px;
+}
+
+#Contatos form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#Contatos input, 
+#Contatos textarea, 
+#Contatos button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+#Contatos button {
+    background-color: #c71f37;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#Contatos button:hover {
+    background-color: #c71f37;
+}
+
+.container {
+    background: linear-gradient(90deg, #3e0013, #242424);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+/* Responsividade com Menu Hambúrguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+/* Checkbox escondido */
+.menu-toggle-input {
+  display: none;
+}
+
+/* Botão hambúrguer */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+img {
+    max-width: 100%;   /* a imagem não ultrapassa a largura do container */
+    height: auto;      /* mantém a proporção da imagem */
+    display: block;    /* remove pequenos espaços embaixo da imagem */
+    margin: 0 auto;    /* centraliza horizontalmente */
+}
+
+/* Menu responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: black;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  /* Exibir menu quando checkbox estiver marcado */
+  .menu-toggle-input:checked ~ nav ul {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+

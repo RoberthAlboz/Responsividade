@@ -1,75 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNews Today</title>
-  <style>
-    body{ background-color:#000000;
-        text-align: center;}
-
-    header{background:url(https://i.pinimg.com/originals/36/e4/d0/36e4d0b856694fc471344b644a1dd6e4.gif) no-repeat center fixed;
-        background-size: cover; 
-        padding: 8%;}
-    
-    footer{background:url(https://i.pinimg.com/originals/36/e4/d0/36e4d0b856694fc471344b644a1dd6e4.gif) no-repeat center fixed;
-        background-size: cover; }
-        
-
-    h1{color: rgb(255, 251, 234);
-       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
-
-    h3{color: rgb(255, 251, 234);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}    
-
-    h4{color: rgb(255, 251, 234);}
-    p{color:rgb(255, 251, 234) ;}
-    a{color: aqua;}
-    label{color:rgb(255, 251, 234);}
-
-  </style>
+    <title>CARBY</title>
+    <link rel="stylesheet" href="1_responsividade.css">
 </head>
+
+<!-- Cabeçalho -->
+<header>
+    <!-- Checkbox escondido para controlar o menu -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+
+    <!-- Botão hamburguer -->
+    <label for="menu-toggle" class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <!-- Navegação -->
+    <nav>
+        <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Carros</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Produtos</a></li>
+        </ul>
+    </nav>
+
+    <img src="assets/carby.png" alt="Logo Carby" width="800">
+    <h3>Gabrielly lança sonhos, nós lançamos você na estrada.</h3>
+</header>
+
+<main>
+    <section id="Home">
+        <a><button>Veja nosso catálogo</button></a>
+    </section>
+
+    <section id="Carros">
+        <form>
+            <select>
+                <option>Por preço</option>
+                <option>Por marca</option>
+                <option>Por ano</option>
+            
+            </select>
+        </form>
+    </section>
+
+    <section id="Produtos">
+
+    </section>
+</main>
 <body>
-    <!--Cabeçalho-->
-    <header>
-        <img src="assets/technews.png" alt="Logo TechNews" width="500">
-        <h1><em>Seu portal de notícias tech favorito</em></h3> 
-    </header>
-
-    <main>
-        <h3>🤖<ins>IA REVOLUCIONA DESENVOLVIMENTO</ins> !</h2>
-        <p><em>07/08/2025</em></p>
-        <p>Inteligência artificial está transformando como criamos softwares...</p>
-        <p><a href="https://imasters.com.br/desenvolvimento/a-revolucao-silenciosa-como-a-ia-esta-transformando-o-desenvolvimento-de-software" target="_blank">▶ Veja mais</a></p><br><br>
-
-        <h3>📺<ins>TECH EM VÍDEO</ins></h3>
-        <iframe width="480" height="290"
-     src="https://www.youtube.com/embed/eqUFcr1mI3Y"></iframe><br><br>
+<div class="container">
+  <table>
+     <h1>Qualidade que você sente na primeira volta </h1>
 <br>
+    <p>Na Carby, cada carro é escolhido com o máximo de cuidado. Nossa prioridade é garantir que você leve para casa um veículo de procedência comprovada, revisado e pronto para oferecer segurança e desempenho no seu dia a dia.
+
+    Todos os nossos automóveis passam por uma avaliação rigorosa, onde checamos desde a parte mecânica até os mínimos detalhes estéticos. Assim, você tem a certeza de estar comprando um carro confiável, durável e de alto padrão.
 <br>
-        <h4><em>📰 Newsletter</em></h4>
-        <p>
-            <label for="e-mail">E-mail</label>
-            <input type="e-mail" id="e-mail" name="e-mail" placeholder="Digite seu e-mail..." required>  |
-            <label for="Área de interesse">Área de interesse:</label>
-            <select name="Área de interesse" id="Área de interesse";>
-            <option value=""> Selecione </option>
-            <option value="IA"> Inteligência Artificial</option>
-            <option value="tech">Tecnologia</option>
-            <option value="games">Games</option>
-            <option value="geral">Geral</option>
-            </select>  |
-        <input type="radio" id="Aceito os termos" name="termos" value="t" required>
-        <label for="Aceito os termos">Aceito os termos </label><br><br>
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpar</button>
-        </p><br><br>
-    </main>
-    <footer>
-        <p>
-            © 2025 TechNews Today · Todos os direitos reservados
-            Contato: <ins>info@technews.com </ins>
-        </p>
-    </footer>
+    Por que escolher a qualidade Carby?
+    <br>
+    <li>Veículos inspecionados e aprovados por especialistas </li>
+    <li>Garantia de procedência e documentação 100% regularizada </li> 
+    <li>Revisões completas antes da entrega </li>
+    <li> Carros prontos para rodar com segurança e conforto </li>
+
+    
+
+<br>
+<br><br>
+
+<div style="text-align: center;">
+<img src="assets/2img_Responsividade (1).jpg" width="1400">
+</div>
+
+  </table>
+ <br>
+ <br>
+  <table>
+    <h1> Sobre Nós!</h1>
+    <br>
+    <p>A Carby nasceu com o propósito de transformar a experiência de comprar um carro em algo simples, seguro e inesquecível. Aqui, cada detalhe é pensado para que você encontre o veículo certo para o seu estilo de vida.
+
+    Com um estoque sempre atualizado, a Carby oferece carros novos e seminovos de diversas marcas e modelos, todos revisados e com procedência garantida. Nosso compromisso é unir qualidade, transparência e confiança, entregando muito mais do que um automóvel: entregamos tranquilidade e satisfação.
+<br>
+    Na Carby, você conta com:
+    <li>Veículos selecionados com rigorosa avaliação. </li>
+    <li> Planos de financiamento flexíveis e acessíveis. </li>
+    <li>Equipe especializada para tirar todas as suas dúvidas. </li>
+    <li>Estrutura moderna para um atendimento confortável e diferenciado.</li>
+<br>
+   
+  </table>
+</div>
 </body>
+
+<main>
+        <section id="Contatos">
+     <h2>Contato</h2>
+     <form>
+          <input type="text" placeholder="Nome">
+          <input type="email" placeholder="E-mail">
+          <input type="tel" placeholder="Telefone">
+          <textarea placeholder="Mensagem"></textarea>
+          <button>Enviar</button>
+      </form>
+      
+    </section>
+</main>
+<footer>
+    © 2025 Carby · Todos os direitos reservados Contato: info@carby.com
+</footer>
+
+
 </html>
