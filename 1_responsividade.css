@@ -173,12 +173,12 @@ main {
   margin: 4px 0;
   border-radius: 5px;
 }
-
+     /* Faz as imagens diminuirem junto */
 img {
-    max-width: 100%;   /* a imagem não ultrapassa a largura do container */
-    height: auto;      /* mantém a proporção da imagem */
-    display: block;    /* remove pequenos espaços embaixo da imagem */
-    margin: 0 auto;    /* centraliza horizontalmente */
+    max-width: 100%;   
+    height: auto;      
+    display: block;    
+    margin: 0 auto;    
 }
 
 /* Menu responsivo */
